@@ -1,27 +1,22 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @theme {
     --breakpoint-fold: 40rem;
     --breakpoint-phone: 48rem;
     --breakpoint-tablet: 62rem;
     --breakpoint-laptop: 64rem;
-    --color-main-color: #ff5a1f;
-    --color-main-bg: #0a0a0a;
-    --color-2nd-bg: #1b1b1b;
-    --color-title-color: #FEFEFE;
-    --color-sub-title-color: #707070;
-    --color-text-color: #BABABA;
+    --color-main-color: #e87722;
+    --color-main-bg: #08080e;
+    --color-sec-bg: #1c1c2a;
+    --color-text-color: #767694;
 }
 
 :root {
-    --main-color: #FD6F00;
-    --main-bg: #0a0a0a;
-    --sec-bg: #1b1b1b;
-    --title-color: #FEFEFE;
-    --sub-title-color: #707070;
-    --text-color: #BABABA;
+    --main-color: #e87722;
+    --main-bg: #08080e;
+    --sec-bg: #1c1c2a;
+    --text-color: #767694;
 }
 
 @utility flex-center {
@@ -36,3 +31,86 @@
     align-items: center;
 }
 
+@layer utilities {
+    .hero {
+        @apply max-w-[780px] pt-28 lg:pt-32;
+    }
+
+    .hero>.text {
+        @apply flex flex-wrap gap-3 mb-10;
+    }
+
+    .hero>.text span {
+        @apply inline-flex rounded-full px-4 py-2 text-[12px] uppercase tracking-[0.2em];
+    }
+
+    .hero>.text span:first-child {
+        @apply bg-[#211419] text-[#f7b16d];
+    }
+
+    .hero>.text span:last-child {
+        @apply bg-[#2c1017] text-[#ff5e6d];
+    }
+
+    .hero h1 {
+        @apply text-[3.6rem] md:text-[4.6rem] font-black leading-[0.95] tracking-[-0.05em] text-white;
+    }
+
+    .hero>p {
+        @apply mt-6 text-sm text-[#9fa1c8] leading-7 max-w-[720px];
+    }
+
+    .hero>.buttons {
+        @apply mt-12 flex flex-wrap gap-4;
+    }
+
+    .hero>.buttons a {
+        @apply inline-flex items-center justify-center gap-2 rounded-xl px-9 py-4 text-white font-semibold;
+    }
+
+    .hero>.buttons a:first-child {
+        @apply bg-main-color shadow-[0_24px_60px_rgba(232, 119, 34, 0.18)];
+    }
+
+    .hero>.buttons a:last-child {
+        @apply border border-white/20 bg-white/5;
+    }
+
+    .hero>.data {
+        @apply mt-16 grid gap-5 sm:grid-cols-4;
+    }
+
+    .hero>.data>div {
+        @apply text-center;
+    }
+
+    .hero>.data>div>p:first-child {
+        @apply text-[2.4rem] font-black text-white;
+    }
+
+    .hero>.data>div>p:last-child {
+        @apply mt-2 text-xs text-[#9fa1c8] uppercase tracking-[0.16em];
+    }
+}
+
+header .logo:after {
+    position: absolute;
+    content: "";
+    height: .5px;
+    width: 10000px;
+    background-color: rgba(232, 120, 34, 0.2);
+    left: -500px;
+    bottom: -17px;
+}
+
+header ul li {
+    @apply transition-colors duration-125
+}
+
+header ul li:not(:last-of-type):hover {
+    @apply text-main-color
+}
+
+header ul li:last-of-type:hover {
+    @apply text-main-color bg-white
+}

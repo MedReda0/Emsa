@@ -31,68 +31,6 @@
     align-items: center;
 }
 
-@layer utilities {
-    .hero {
-        @apply max-w-[780px] pt-28 lg:pt-32;
-    }
-
-    .hero>.text {
-        @apply flex flex-wrap gap-3 mb-10;
-    }
-
-    .hero>.text span {
-        @apply inline-flex rounded-full px-4 py-2 text-[12px] uppercase tracking-[0.2em];
-    }
-
-    .hero>.text span:first-child {
-        @apply bg-[#211419] text-[#f7b16d];
-    }
-
-    .hero>.text span:last-child {
-        @apply bg-[#2c1017] text-[#ff5e6d];
-    }
-
-    .hero h1 {
-        @apply text-[3.6rem] md:text-[4.6rem] font-black leading-[0.95] tracking-[-0.05em] text-white;
-    }
-
-    .hero>p {
-        @apply mt-6 text-sm text-[#9fa1c8] leading-7 max-w-[720px];
-    }
-
-    .hero>.buttons {
-        @apply mt-12 flex flex-wrap gap-4;
-    }
-
-    .hero>.buttons a {
-        @apply inline-flex items-center justify-center gap-2 rounded-xl px-9 py-4 text-white font-semibold;
-    }
-
-    .hero>.buttons a:first-child {
-        @apply bg-main-color shadow-[0_24px_60px_rgba(232, 119, 34, 0.18)];
-    }
-
-    .hero>.buttons a:last-child {
-        @apply border border-white/20 bg-white/5;
-    }
-
-    .hero>.data {
-        @apply mt-16 grid gap-5 sm:grid-cols-4;
-    }
-
-    .hero>.data>div {
-        @apply text-center;
-    }
-
-    .hero>.data>div>p:first-child {
-        @apply text-[2.4rem] font-black text-white;
-    }
-
-    .hero>.data>div>p:last-child {
-        @apply mt-2 text-xs text-[#9fa1c8] uppercase tracking-[0.16em];
-    }
-}
-
 header .logo:after {
     position: absolute;
     content: "";
@@ -100,7 +38,8 @@ header .logo:after {
     width: 10000px;
     background-color: rgba(232, 120, 34, 0.2);
     left: -500px;
-    bottom: -17px;
+    bottom: -15px;
+    z-index: 9999;
 }
 
 header ul li {
@@ -113,4 +52,53 @@ header ul li:not(:last-of-type):hover {
 
 header ul li:last-of-type:hover {
     @apply text-main-color bg-white
+}
+
+.hero .text span {
+    @apply inline-flex rounded-full px-4 py-2 text-[12px] uppercase tracking-[0.2em];
+}
+
+.hero .text span:first-child {
+    @apply bg-[#211419] text-[#f7b16d];
+}
+
+.hero .text span:last-child {
+    @apply bg-[#2c1017] text-[#ff5e6d];
+}
+
+.hero h1 {
+    @apply text-[3.6rem] md:text-[4.6rem] font-black leading-[0.95] tracking-[-0.05em] text-white;
+}
+
+.hero>p {
+    @apply mt-6 text-sm text-[#9fa1c8] leading-7 max-w-[720px];
+}
+
+.hero .buttons {
+    @apply mt-12 flex flex-wrap gap-4;
+}
+
+.hero .buttons a {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-9 py-4 text-white font-semibold;
+}
+
+.hero .buttons a:first-child {
+    @apply bg-main-color;
+    box-shadow: 0 24px 60px rgba(232, 119, 34, 0.18);
+}
+
+.hero .buttons a:last-child {
+    @apply border border-white/20 bg-white/5;
+}
+
+.hero .data {
+    @apply mt-16 grid gap-5 sm:grid-cols-4;
+}
+
+.hero .data div p:first-child {
+    @apply text-[2.4rem] font-black text-white;
+}
+
+.hero .data div p:last-child {
+    @apply mt-2 text-xs text-[#9fa1c8] uppercase tracking-[0.16em];
 }

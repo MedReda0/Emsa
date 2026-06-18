@@ -8,8 +8,9 @@
     --breakpoint-laptop: 64rem;
     --color-main-color: #e87722;
     --color-main-bg: #08080e;
-    --color-sec-bg: #1c1c2a;
+    --color-sec-bg: #10101a;
     --color-text-color: #767694;
+    --color-card-color: #181826;
 }
 
 :root {
@@ -17,6 +18,7 @@
     --main-bg: #08080e;
     --sec-bg: #1c1c2a;
     --text-color: #767694;
+    --card-color: #181826;
 }
 
 @utility flex-center {
@@ -54,51 +56,92 @@ header ul li:last-of-type:hover {
     @apply text-main-color bg-white
 }
 
-.hero .text span {
+main .hero .text span {
     @apply inline-flex rounded-full px-4 py-2 text-[12px] uppercase tracking-[0.2em];
 }
 
-.hero .text span:first-child {
+main .hero .text span:first-child {
     @apply bg-[#211419] text-[#f7b16d];
 }
 
-.hero .text span:last-child {
+main .hero .text span:last-child {
     @apply bg-[#2c1017] text-[#ff5e6d];
 }
 
-.hero h1 {
+main .hero h1 {
     @apply text-[3.6rem] md:text-[4.6rem] font-black leading-[0.95] tracking-[-0.05em] text-white;
 }
 
-.hero>p {
+main .hero>p {
     @apply mt-6 text-sm text-[#9fa1c8] leading-7 max-w-[720px];
 }
 
-.hero .buttons {
+main .hero .buttons {
     @apply mt-12 flex flex-wrap gap-4;
 }
 
-.hero .buttons a {
+main .hero .buttons a {
     @apply inline-flex items-center justify-center gap-2 rounded-xl px-9 py-4 text-white font-semibold;
 }
 
-.hero .buttons a:first-child {
+main .hero .buttons a:first-child {
     @apply bg-main-color;
     box-shadow: 0 24px 60px rgba(232, 119, 34, 0.18);
 }
 
-.hero .buttons a:last-child {
+main .hero .buttons a:last-child {
     @apply border border-white/20 bg-white/5;
 }
 
-.hero .data {
+main .hero .data {
     @apply mt-16 grid gap-5 sm:grid-cols-4;
 }
 
-.hero .data div p:first-child {
+main .hero .data div p:first-child {
     @apply text-[2.4rem] font-black text-white;
 }
 
-.hero .data div p:last-child {
+main .hero .data div p:last-child {
     @apply mt-2 text-xs text-[#9fa1c8] uppercase tracking-[0.16em];
 }
+
+section {
+    @apply py-16
+}
+
+#accreditations .flag{
+    @apply flex items-center gap-4 py-4 px-6 rounded-lg bg-card-color
+}
+
+#accreditations .flag img{
+    @apply h-12 w-auto rounded-md
+}
+
+#accreditations .flag p:first-of-type{
+    @apply text-white font-semibold
+}
+
+#accreditations .flag p:last-of-type{
+    @apply text-[13px] text-text-color
+}
+
+#accreditations .card {
+    @apply bg-card-color rounded-lg p-8 text-center flex-center flex-col;
+}
+
+#accreditations .card .logo {
+    @apply flex-center size-35 bg-gray-700 rounded-full;
+}
+
+#accreditations .card .logo img {
+    @apply h-25 w-auto;
+}
+
+#accreditations .card h3 {
+    @apply text-white text-xl font-bold mt-6 mb-3;
+}
+
+#accreditations .card p {
+    @apply text-text-color text-[15px] max-w-[400px] leading-6;
+}
+

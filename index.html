@@ -8,19 +8,20 @@
     <title>EMSA</title>
 </head>
 <body class="bg-main-bg text-text-color overflow-x-hidden!">
-    <header class="flex-between fixed z-100 top-0 left-1/2 -translate-x-1/2 py-4 bg-main-bg/80 backdrop-blur-xl">
+    <header class="flex-between fixed z-100 top-0 left-1/2 -translate-x-1/2 py-4 px-[auto]! backdrop-blur-xl">
         <a href="" class="logo relative flex items-center gap-x-3 text-[12px] text-white">
             <img src="Assets/emsa logo.png" alt="emsa" class="w-[100px] h-[60px] rounded-md border-2 border-main-color bg-white pr-2 pb-2">
             <span>École Marocaine des Sciences<br>Appliquées<br>المدرسة المغربية للعلوم التطبيقية</span>
         </a>
         <ul class="flex-center gap-4 text-[15px] max-tablet:hidden">
+            <li><a href="#accreditations">Accreditations</a></li>
             <li><a href="#formations">Formations</a></li>
             <li><a href="#questions">Pourquoi EMSA</a></li>
             <li><a href="#témoignages">Témoignages</a></li>
             <li class="text-white bg-main-color py-2 px-5 rounded-md font-bold"><a href="#inscription">S'inscrire</a></li>
         </ul>
     </header>
-    <main class="flex-between">
+    <main class="flex-between pb-20">
         <div class="hero max-w-[780px] pt-28 laptop:pt-32">
             <div class="text flex flex-wrap gap-3 mb-10">
                 <span>Inscriptions ouvertes</span>
@@ -58,6 +59,59 @@
             </div>
         </div>
     </main>
+    <section id="accreditations" class="bg-sec-bg px-15! ">
+        <div class="text-center mb-15">
+            <span class="badge bg-[#1b1b22] text-main-color py-1 px-3.5 rounded-[50px] text-[12px] uppercase tracking-[0.2em]">GARANTIE D'EXCELLENCE</span>
+            <h2 class="text-white text-4xl md:text-[42px] font-bold mt-7 mb-2 leading-13.5">
+                Nos <span class="text-main-color">Accréditations</span><br>
+                & Partenariats
+            </h2>
+            <p class="text-text-color text-[15px] leading-7 mt-6 max-w-[700px] mx-auto">
+                La formation à l'École Marocaine des Sciences Appliquées, reconnue par l'État, vise à<br>
+                renforcer l'organisation des entreprises et la qualité de leurs ressources humaines. Nous<br>
+                formons des cadres et managers capables d'occuper des postes de responsabilité.
+            </p>
+        </div>
+        <div class="flags flex justify-center gap-12 mb-15 flex-wrap">
+            <div class="flag">
+                <img src="Assets/Flag_of_Morocco.png" alt="Diplôme National">
+                <div class="text">
+                    <p>Diplôme National</p>
+                    <p>Reconnu par l'État</p>
+                </div>
+            </div>
+            <div class="flag">
+                <img src="Assets/Flag_of_Europe.webp" alt="Standard Européen">
+                <div class="text">
+                    <p>Standard Européen</p>
+                    <p>Mobilité internationale</p>
+                </div>
+            </div>
+        </div>
+        <div class="cards grid gap-8 tablet:grid-cols-3">
+            <div class="card">
+                <div class="logo">
+                    <img src="Assets/Ministère de l'Éducation.png" alt="Ministère" class="translate-y-[-4px] translate-x-[.5px]">
+                </div>
+                <h3>Ministère de l'Éducation</h3>
+                <p>Accréditation officielle du Ministère de l'Éducation nationale et de la formation professionnelle.</p>
+            </div>
+            <div class="card">
+                <div class="logo">
+                    <img src="Assets/European Union accredited.png" alt="EU">
+                </div>
+                <h3>Accréditation Union Européenne</h3>
+                <p class="card-description">Validation des cursus selon les normes de qualité du cadre européen de certification académique.</p>
+            </div>
+            <div class="card">
+                <div class="logo">
+                    <img src="Assets/fedep.png" alt="FEDEP">
+                </div>
+                <h3>Fédération FEDEP</h3>
+                <p class="card-description">Membre actif de la Fédération Européenne des Écoles Professionnelles garantissant l'insertion.</p>
+            </div>
+        </div>
+    </section>
     <script src="JS/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

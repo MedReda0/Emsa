@@ -50,37 +50,37 @@ section {
 }
 
 @media (min-width: 450px) {
-    .container,header,main,section,footer {
+    .container,header,main,section:not(:first-of-type),footer {
         max-width:450px
     }
 }
 
 @media (min-width: 575px) {
-    .container,header,main,section,footer {
+    .container,header,main,section:not(:first-of-type),footer {
         max-width:575px
     }
 }
 
 @media (min-width: 768px) {
-    .container,header,main,section,footer {
+    .container,header,main,section:not(:first-of-type),footer {
         max-width:768px
     }
 }
 
 @media (min-width: 992px) {
-    .container,header,main,section,footer {
+    .container,header,main,section:not(:first-of-type),footer {
         max-width:992px;
     }
 }
 
 @media (min-width: 1200px) {
-    .container,header,main,section,footer {
+    .container,header,main,section:not(:first-of-type),footer {
         max-width:1400px
     }
 }
 
 @media (min-width: 1400px) {
-    .container,header,main,section,footer {
+    .container,header,main,section:not(:first-of-type),footer {
         max-width:1600px
     }
 }

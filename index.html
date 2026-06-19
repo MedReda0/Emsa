@@ -8,107 +8,247 @@
     <title>EMSA</title>
 </head>
 <body class="bg-main-bg text-text-color overflow-x-hidden!">
-    <header class="flex-between fixed z-100 top-0 left-1/2 -translate-x-1/2 py-4 px-[auto]! backdrop-blur-xl">
-        <a href="" class="logo relative flex items-center gap-x-3 text-[12px] text-white">
-            <img src="Assets/emsa logo.png" alt="emsa" class="w-[100px] h-[60px] rounded-md border-2 border-main-color bg-white pr-2 pb-2">
-            <span>École Marocaine des Sciences<br>Appliquées<br>المدرسة المغربية للعلوم التطبيقية</span>
-        </a>
-        <ul class="flex-center gap-4 text-[15px] max-tablet:hidden">
-            <li><a href="#accreditations">Accreditations</a></li>
-            <li><a href="#formations">Formations</a></li>
-            <li><a href="#questions">Pourquoi EMSA</a></li>
-            <li><a href="#témoignages">Témoignages</a></li>
-            <li class="text-white bg-main-color py-2 px-5 rounded-md font-bold"><a href="#inscription">S'inscrire</a></li>
-        </ul>
+    <header class="backdrop-blur-xl fixed z-100 top-0 left-1/2 -translate-x-1/2 w-full">
+        <div class="container flex-between py-4 px-[auto]! ">
+            <a href="" class="logo relative flex items-center gap-x-3 text-[12px] text-white">
+                <img src="Assets/emsa logo.png" alt="emsa" class="w-[100px] h-[60px] rounded-md border-2 border-main-color bg-white pr-2 pb-2">
+                <span>École Marocaine des Sciences<br>Appliquées<br>المدرسة المغربية للعلوم التطبيقية</span>
+            </a>
+            <ul class="flex-center gap-4 text-[15px] max-tablet:hidden">
+                <li><a href="#accreditations">Accreditations</a></li>
+                <li><a href="#formations">Formations</a></li>
+                <li><a href="#questions">Pourquoi EMSA</a></li>
+                <li><a href="#témoignages">Témoignages</a></li>
+                <li class="text-white bg-main-color py-2 px-5 rounded-md font-bold"><a href="#inscription">S'inscrire</a></li>
+            </ul>
+        </div>
     </header>
-    <main class="flex-between pb-20">
-        <div class="hero max-w-[780px] pt-28 laptop:pt-32">
-            <div class="text flex flex-wrap gap-3 mb-10">
-                <span>Inscriptions ouvertes</span>
-                <span>Places limitées</span>
+    <main>
+        <div class="container flex-between pb-20">
+            <div class="hero max-w-[780px] pt-28 laptop:pt-32 max-phone:text-center">
+                <div class="text flex flex-wrap gap-3 mb-10 max-phone:flex-center">
+                    <span class="bg-[#211419] text-[#f7b16d]">Inscriptions ouvertes</span>
+                    <span class="bg-[#2c1017] text-[#ff5e6d]">Places limitées</span>
+                </div>
+                <h1 class="text-[3.6rem] tablet:text-[4.6rem] font-black leading-[0.95] tracking-tighter text-white">
+                    Ton avenir commence <span class="text-main-color">ici.</span><br>
+                    Forme-toi pour les métiers <span class="underline decoration-main-color decoration-4 underline-offset-8">qui recrutent</span>.
+                </h1>
+                <p class="mt-6 text-sm text-[#9fa1c8] leading-7 max-w-[720px]">
+                    Développement Informatique · Transport & Logistique<br>
+                    2 ans · 100% pratique · Diplôme agréé · Stage garanti · Casablanca
+                </p>
+                <div class="buttons mt-12 flex max-phone:flex-center flex-wrap gap-4">
+                    <a href="#inscription" class="bg-main-color btn-shadow">Réserver ma place</a>
+                    <a href="#formations" class="border border-white/20 bg-white/5">Voir les formations</a>
+                </div>
+                <div class="data mt-16 grid gap-5 phone:grid-cols-4 text-center">
+                    <div>
+                        <p>0%</p>
+                        <p>Taux d'insertion pro</p>
+                    </div>
+                    <div>
+                        <p>0+</p>
+                        <p>Entreprises partenaires</p>
+                    </div>
+                    <div>
+                        <p>0</p>
+                        <p>Ans de formation</p>
+                    </div>
+                    <div>
+                        <p>0+</p>
+                        <p>Ans d'expérience</p>
+                    </div>
             </div>
-            <h1>
-                Ton avenir commence <span class="text-main-color">ici.</span><br>
-                Forme-toi pour les métiers <span class="underline decoration-main-color decoration-4 underline-offset-8">qui recrutent</span>.
-            </h1>
-            <p>
-                Développement Informatique · Transport & Logistique<br>
-                2 ans · 100% pratique · Diplôme agréé · Stage garanti · Casablanca
-            </p>
-            <div class="buttons">
-                <a href="#inscription">Réserver ma place</a>
-                <a href="#formations">Voir les formations</a>
-            </div>
-            <div class="data text-center">
-                <div>
-                    <p>0%</p>
-                    <p>Taux d'insertion pro</p>
-                </div>
-                <div>
-                    <p>0+</p>
-                    <p>Entreprises partenaires</p>
-                </div>
-                <div>
-                    <p>0</p>
-                    <p>Ans de formation</p>
-                </div>
-                <div>
-                    <p>0+</p>
-                    <p>Ans d'expérience</p>
-                </div>
-            </div>
+        </div>
         </div>
     </main>
-    <section id="accreditations" class="bg-sec-bg px-15! ">
-        <div class="text-center mb-15">
-            <span class="badge bg-[#1b1b22] text-main-color py-1 px-3.5 rounded-[50px] text-[12px] uppercase tracking-[0.2em]">GARANTIE D'EXCELLENCE</span>
-            <h2 class="text-white text-4xl md:text-[42px] font-bold mt-7 mb-2 leading-13.5">
-                Nos <span class="text-main-color">Accréditations</span><br>
-                & Partenariats
-            </h2>
-            <p class="text-text-color text-[15px] leading-7 mt-6 max-w-[700px] mx-auto">
-                La formation à l'École Marocaine des Sciences Appliquées, reconnue par l'État, vise à<br>
-                renforcer l'organisation des entreprises et la qualité de leurs ressources humaines. Nous<br>
-                formons des cadres et managers capables d'occuper des postes de responsabilité.
-            </p>
+    <section id="accreditations" class="bg-sec-bg">
+        <div class="container">
+            <div class="text-center mb-15">
+                <span class="badge bg-[#1b1b22] text-main-color py-1 px-3.5 rounded-[50px] text-[12px] uppercase tracking-[0.2em]">GARANTIE D'EXCELLENCE</span>
+                <h2 class="text-white text-3xl fold:text-4xl tablet:text-[42px] font-bold mt-7 mb-2 leading-13.5">
+                    Nos <span class="text-main-color">Accréditations</span><br>
+                    & Partenariats
+                </h2>
+                <p class="text-text-color text-sm fold:text-[15px] leading-7 mt-6 max-w-[700px] mx-auto">
+                    La formation à l'École Marocaine des Sciences Appliquées, reconnue par l'État, vise à<br>
+                    renforcer l'organisation des entreprises et la qualité de leurs ressources humaines. Nous<br>
+                    formons des cadres et managers capables d'occuper des postes de responsabilité.
+                </p>
+            </div>
+            <div class="flags flex justify-center gap-12 mb-15 flex-wrap">
+                <div class="flag">
+                    <img src="Assets/Flag_of_Morocco.png" alt="Diplôme National">
+                    <div class="text">
+                        <p>Diplôme National</p>
+                        <p>Reconnu par l'État</p>
+                    </div>
+                </div>
+                <div class="flag">
+                    <img src="Assets/Flag_of_Europe.webp" alt="Standard Européen">
+                    <div class="text">
+                        <p>Standard Européen</p>
+                        <p>Mobilité internationale</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards container grid gap-8 tablet:grid-cols-3">
+                <div class="card">
+                    <div class="logo">
+                        <img src="Assets/Ministère de l'Éducation.png" alt="Ministère" class="translate-y-[-4px] translate-x-[.5px]">
+                    </div>
+                    <h3>Ministère de l'Éducation</h3>
+                    <p>Accréditation officielle du Ministère de l'Éducation nationale et de la formation professionnelle.</p>
+                </div>
+                <div class="card">
+                    <div class="logo">
+                        <img src="Assets/European Union accredited.png" alt="EU">
+                    </div>
+                    <h3>Accréditation Union Européenne</h3>
+                    <p class="card-description">Validation des cursus selon les normes de qualité du cadre européen de certification académique.</p>
+                </div>
+                <div class="card">
+                    <div class="logo">
+                        <img src="Assets/fedep.png" alt="FEDEP">
+                    </div>
+                    <h3>Fédération FEDEP</h3>
+                    <p class="card-description">Membre actif de la Fédération Européenne des Écoles Professionnelles garantissant l'insertion.</p>
+                </div>
+            </div>
         </div>
-        <div class="flags flex justify-center gap-12 mb-15 flex-wrap">
-            <div class="flag">
-                <img src="Assets/Flag_of_Morocco.png" alt="Diplôme National">
-                <div class="text">
-                    <p>Diplôme National</p>
-                    <p>Reconnu par l'État</p>
-                </div>
+    </section>
+    <section id="formations">
+        <div class="container">
+            <div class="intro text-center mb-16">
+                <span class="bg-[#1b1b22] text-main-color py-1.5 px-4 rounded-[50px] text-[12px] uppercase tracking-[0.2em] font-semibold">FORMATIONS</span>
+                <h2 class="text-white text-3xl fold:text-4xl tablet:text-[42px] font-black mt-7 mb-2 leading-tight tracking-tight">2 filières. 1 objectif : ton emploi.</h2>
+                <p class="text-text-color text-sm fold:text-[15px] leading-7 mt-6 max-w-[700px] mx-auto">Choisis la filière qui correspond à ta passion et aux besoins du marché marocain en 2025/2026.</p>
             </div>
-            <div class="flag">
-                <img src="Assets/Flag_of_Europe.webp" alt="Standard Européen">
-                <div class="text">
-                    <p>Standard Européen</p>
-                    <p>Mobilité internationale</p>
-                </div>
-            </div>
-        </div>
-        <div class="cards grid gap-8 tablet:grid-cols-3">
-            <div class="card">
-                <div class="logo">
-                    <img src="Assets/Ministère de l'Éducation.png" alt="Ministère" class="translate-y-[-4px] translate-x-[.5px]">
-                </div>
-                <h3>Ministère de l'Éducation</h3>
-                <p>Accréditation officielle du Ministère de l'Éducation nationale et de la formation professionnelle.</p>
-            </div>
-            <div class="card">
-                <div class="logo">
-                    <img src="Assets/European Union accredited.png" alt="EU">
-                </div>
-                <h3>Accréditation Union Européenne</h3>
-                <p class="card-description">Validation des cursus selon les normes de qualité du cadre européen de certification académique.</p>
-            </div>
-            <div class="card">
-                <div class="logo">
-                    <img src="Assets/fedep.png" alt="FEDEP">
-                </div>
-                <h3>Fédération FEDEP</h3>
-                <p class="card-description">Membre actif de la Fédération Européenne des Écoles Professionnelles garantissant l'insertion.</p>
+            <div class="cards-list grid gap-8">
+                <article class="card">
+                    <div class="card-header">
+                        <div class="card-info">
+                            <div class="card-icon">
+                                <i class="fi fi-rr-display-code text-[28px] text-[#58d88f]"></i>
+                            </div>
+                            <div class="card-text">
+                                <h3>Développement Informatique</h3>
+                                <div class="card-badges">
+                                    <span class="card-badge badge-time">2 ans</span>
+                                    <span class="card-badge badge-state">Agréé État</span>
+                                    <span class="card-badge badge-highlight">Très demandé</span>
+                                </div>
+                                <p>Dev web, mobile, bases de données. Le profil que toutes les entreprises tech du Maroc cherchent.</p>
+                            </div>
+                        </div>
+                        <a href="#inscription" class="card-btn btn-shadow">Rejoindre cette filière →</a>
+                    </div>
+                    <div class="card-divider"></div>
+                    <div class="card-body">
+                        <div class="card-outcomes">
+                            <h4>Débouchés professionnels</h4>
+                            <ul>
+                                <li>
+                                    <span>→</span>
+                                    <span>Développeur Web Full Stack</span>
+                                </li>
+                                <li>
+                                    <span>→</span>
+                                    <span>Développeur Mobile (iOS/Android)</span>
+                                </li>
+                                <li>
+                                    <span>→</span>
+                                    <span>Technicien Support Informatique</span>
+                                </li>
+                                <li>
+                                    <span>→</span>
+                                    <span>Administrateur Base de Données</span>
+                                </li>
+                                <li>
+                                    <span>→</span>
+                                    <span>Intégrateur Web / UI Developer</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-skills">
+                            <h4>Programme & compétences</h4>
+                            <div class="skills-list">
+                                <span>HTML/CSS/JS</span>
+                                <span>React</span>
+                                <span>Python</span>
+                                <span>PHP/Laravel</span>
+                                <span>SQL / MySQL</span>
+                                <span>Réseaux</span>
+                                <span>Cybersécurité</span>
+                                <span>UI/UX</span>
+                                <span>IA — Initiation</span>
+                                <span>Projet PFE</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <div class="card-info">
+                            <div class="card-icon">
+                                <i class="fi fi-rr-truck-moving text-[28px] text-[#ffb36d]"></i>
+                            </div>
+                            <div class="card-text">
+                                <h3>Transport & Logistique</h3>
+                                <div class="card-badges">
+                                    <span class="card-badge badge-time">2 ans</span>
+                                    <span class="card-badge badge-state">Agréé État</span>
+                                    <span class="card-badge badge-highlight">Secteur en croissance</span>
+                                </div>
+                                <p>Pilote des flux, gère des stocks, maîtrise la supply chain. Le Maroc investit massivement — sois prêt.</p>
+                            </div>
+                        </div>
+                        <a href="#inscription" class="card-btn btn-shadow">Rejoindre cette filière →</a>
+                    </div>
+                    <div class="card-divider"></div>
+                    <div class="card-body">
+                        <div class="card-outcomes">
+                            <h4>Débouchés professionnels</h4>
+                            <ul>
+                                <li>
+                                    <span>→</span>
+                                    <span>Agent & Responsable Logistique</span>
+                                </li>
+                                <li>
+                                    <span>→</span>
+                                    <span>Gestionnaire de Stock / WMS</span>
+                                </li>
+                                <li>
+                                    <span>→</span>
+                                    <span>Coordinateur Transport International</span>
+                                </li>
+                                <li>
+                                    <span>→</span>
+                                    <span>Assistant Supply Chain</span>
+                                </li>
+                                <li>
+                                    <span>→</span>
+                                    <span>Agent Transit & Douane</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-skills">
+                            <h4>Programme & compétences</h4>
+                            <div class="skills-list">
+                                <span>Gestion des stocks</span>
+                                <span>Supply Chain</span>
+                                <span>Transport intl.</span>
+                                <span>Transit & Douane</span>
+                                <span>Achats</span>
+                                <span>ERP / WMS</span>
+                                <span>Lean Logistique</span>
+                                <span>E-commerce</span>
+                                <span>Projet PFE</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>

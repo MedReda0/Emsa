@@ -41,7 +41,7 @@ section {
     scroll-snap-align: start;
 }
 
-.container,header,main,section,footer {
+.container{
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -50,37 +50,37 @@ section {
 }
 
 @media (min-width: 450px) {
-    .container,header,main,section:not(:first-of-type),footer {
+    .container{
         max-width:450px
     }
 }
 
 @media (min-width: 575px) {
-    .container,header,main,section:not(:first-of-type),footer {
+    .container{
         max-width:575px
     }
 }
 
 @media (min-width: 768px) {
-    .container,header,main,section:not(:first-of-type),footer {
+    .container{
         max-width:768px
     }
 }
 
 @media (min-width: 992px) {
-    .container,header,main,section:not(:first-of-type),footer {
+    .container{
         max-width:992px;
     }
 }
 
 @media (min-width: 1200px) {
-    .container,header,main,section:not(:first-of-type),footer {
+    .container{
         max-width:1400px
     }
 }
 
 @media (min-width: 1400px) {
-    .container,header,main,section:not(:first-of-type),footer {
+    .container{
         max-width:1600px
     }
 }

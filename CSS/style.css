@@ -16,7 +16,7 @@
 :root {
     --main-color: #e87722;
     --main-bg: #08080e;
-    --sec-bg: #1c1c2a;
+    --sec-bg: #10101a;
     --text-color: #767694;
     --card-color: #181826;
 }
@@ -31,6 +31,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.btn-shadow {
+    box-shadow: 0 16px 36px rgba(232, 119, 34, 0.12);
+}
+
+.btn-shadow:hover {
+    box-shadow: 0 16px 36px rgba(255, 255, 255, 0.08);
 }
 
 header .logo:after {
@@ -68,33 +76,12 @@ main .hero .text span:last-child {
     @apply bg-[#2c1017] text-[#ff5e6d];
 }
 
-main .hero h1 {
-    @apply text-[3.6rem] md:text-[4.6rem] font-black leading-[0.95] tracking-[-0.05em] text-white;
-}
-
-main .hero>p {
-    @apply mt-6 text-sm text-[#9fa1c8] leading-7 max-w-[720px];
-}
-
-main .hero .buttons {
-    @apply mt-12 flex flex-wrap gap-4;
-}
-
 main .hero .buttons a {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl px-9 py-4 text-white font-semibold;
+    @apply flex-center gap-2 rounded-xl px-9 py-4 text-white font-semibold transition-all duration-200;
 }
 
-main .hero .buttons a:first-child {
-    @apply bg-main-color;
-    box-shadow: 0 24px 60px rgba(232, 119, 34, 0.18);
-}
-
-main .hero .buttons a:last-child {
-    @apply border border-white/20 bg-white/5;
-}
-
-main .hero .data {
-    @apply mt-16 grid gap-5 sm:grid-cols-4;
+main .hero .buttons a:first-child:hover {
+    @apply bg-white text-main-color;
 }
 
 main .hero .data div p:first-child {
@@ -109,19 +96,19 @@ section {
     @apply py-16
 }
 
-#accreditations .flag{
+#accreditations .flag {
     @apply flex items-center gap-4 py-4 px-6 rounded-lg bg-card-color
 }
 
-#accreditations .flag img{
+#accreditations .flag img {
     @apply h-12 w-auto rounded-md
 }
 
-#accreditations .flag p:first-of-type{
+#accreditations .flag p:first-child {
     @apply text-white font-semibold
 }
 
-#accreditations .flag p:last-of-type{
+#accreditations .flag p:last-child {
     @apply text-[13px] text-text-color
 }
 
@@ -145,3 +132,101 @@ section {
     @apply text-text-color text-[15px] max-w-[400px] leading-6;
 }
 
+
+#formations .card {
+    @apply bg-card-color rounded-[32px] p-6 phone:p-10 transition-all duration-300 border border-white/5;
+}
+
+#formations .card:hover {
+    @apply border-main-color/15 -translate-y-0.5;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+#formations .card .card-header {
+    @apply flex flex-col gap-6 tablet:flex-row tablet:justify-between tablet:items-center;
+}
+
+#formations .card .card-info {
+    @apply flex flex-col phone:flex-row items-start gap-5;
+}
+
+#formations .card .card-icon {
+    @apply flex-center size-14 rounded-2xl bg-sec-bg shrink-0 transition-transform duration-300 border border-white/5;
+}
+
+#formations .card:hover .card-icon {
+    @apply scale-105;
+}
+
+#formations .card .card-text h3 {
+    @apply text-white text-2xl font-black tracking-tight;
+}
+
+#formations .card .card-badges {
+    @apply flex flex-wrap gap-2 mt-3;
+}
+
+#formations .card .card-badge {
+    @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[13px] font-semibold border;
+}
+
+#formations .card .badge-time {
+    @apply bg-[#091929] text-[#5ab8d8] border-[#5ab8d8]/15;
+}
+
+#formations .card .badge-state {
+    @apply bg-[#11221d] text-[#9de3b5] border-[#9de3b5]/10;
+}
+
+#formations .card .badge-highlight {
+    @apply bg-[#2f160c] text-[#ffb36d] border-[#ffb36d]/10;
+}
+
+#formations .card .card-text p {
+    @apply mt-5 text-[#9fa1c8] text-sm leading-7 max-w-[680px];
+}
+
+#formations .card .card-btn {
+    @apply flex-center rounded-xl bg-main-color px-7 py-3.5 text-sm font-bold text-white transition-all duration-200 shrink-0;
+}
+
+#formations .card .card-btn:hover {
+    @apply bg-white text-main-color;
+}
+
+#formations .card .card-divider {
+    @apply border-t border-white/10 my-8;
+}
+
+#formations .card .card-body {
+    @apply grid gap-8 tablet:grid-cols-[1.1fr_0.9fr];
+}
+
+#formations .card .card-outcomes h4,
+#formations .card .card-skills h4 {
+    @apply uppercase tracking-[0.2em] text-[11px] font-bold text-white mb-5;
+}
+
+#formations .card .card-outcomes ul {
+    @apply space-y-3.5;
+}
+
+#formations .card .card-outcomes li {
+    @apply flex items-start text-sm leading-relaxed text-text-color;
+}
+
+#formations .card .card-outcomes li span:first-child {
+    @apply text-main-color font-bold mr-3 shrink-0;
+}
+
+#formations .card .card-skills .skills-list {
+    @apply flex flex-wrap gap-2;
+}
+
+#formations .card .card-skills .skills-list span {
+    @apply inline-flex items-center rounded-xl border border-white/5 bg-sec-bg px-3.5 py-1.5 text-[13px] text-text-color transition-all duration-200;
+}
+
+#formations .card .card-skills .skills-list span:hover {
+    @apply text-white border-white/10 bg-[#1a1a29];
+}

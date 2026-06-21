@@ -9,7 +9,7 @@
     --color-main-color: #e87722;
     --color-main-bg: #08080e;
     --color-sec-bg: #10101a;
-    --color-text-color: #767694;
+    --color-text-color: #8080a0;
     --color-card-color: #181826;
 }
 
@@ -33,23 +33,17 @@
     align-items: center;
 }
 
+@utility flex-items {
+    display: flex;
+    align-items: center;
+}
+
 .btn-shadow {
     box-shadow: 0 16px 36px rgba(232, 119, 34, 0.12);
 }
 
 .btn-shadow:hover {
     box-shadow: 0 16px 36px rgba(255, 255, 255, 0.08);
-}
-
-header .logo:after {
-    position: absolute;
-    content: "";
-    height: .5px;
-    width: 10000px;
-    background-color: rgba(232, 120, 34, 0.2);
-    left: -500px;
-    bottom: -15px;
-    z-index: 9999;
 }
 
 header ul li {
@@ -96,6 +90,36 @@ section {
     @apply py-16
 }
 
+.intro {
+    @apply text-center;
+}
+
+.intro > span {
+    @apply inline-block py-1.5 px-4 font-semibold bg-main-color/10 text-main-color rounded-[50px] text-[12px] uppercase tracking-[0.2em];
+}
+
+.intro > h2 {
+    @apply text-white text-3xl fold:text-4xl tablet:text-[42px] mt-7 mb-2 font-black relative
+}
+
+.intro h2:after{
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 4px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: var(--color-main-color);
+}
+
+.intro > p {
+    @apply text-text-color text-sm fold:text-[15px] leading-7 mt-6 max-w-[700px] mx-auto;
+}
+
+.card {
+    @apply bg-card-color border border-transparent;
+}
+
 #accreditations .flag {
     @apply flex items-center gap-4 py-4 px-6 rounded-lg bg-card-color
 }
@@ -113,7 +137,7 @@ section {
 }
 
 #accreditations .card {
-    @apply bg-card-color rounded-lg p-8 text-center flex-center flex-col;
+    @apply p-8 text-center flex-center flex-col rounded-lg border-0;
 }
 
 #accreditations .card .logo {
@@ -134,7 +158,7 @@ section {
 
 
 #formations .card {
-    @apply bg-card-color rounded-[32px] p-6 phone:p-10 transition-all duration-300 border border-white/5;
+    @apply rounded-[32px] p-6 phone:p-10 transition-all duration-300;
 }
 
 #formations .card:hover {
@@ -154,8 +178,8 @@ section {
     @apply flex-center size-14 rounded-2xl bg-sec-bg shrink-0 transition-transform duration-300 border border-white/5;
 }
 
-#formations .card:hover .card-icon {
-    @apply scale-105;
+#formations .card .card-icon i{
+    @apply translate-y-[3px] translate-x-px
 }
 
 #formations .card .card-text h3 {
@@ -229,4 +253,38 @@ section {
 
 #formations .card .card-skills .skills-list span:hover {
     @apply text-white border-white/10 bg-[#1a1a29];
+}
+
+#formations .preuve-social .intro h2:after{
+    content: "";
+    left: 50%;
+    translate: -50%;
+}
+
+#formations .preuve-social ul li{
+    @apply flex-center gap-3 font-extrabold text-[14px] py-3 px-6 duration-250 border-text-color/20
+}
+
+#formations .preuve-social ul li:hover{
+    @apply border-main-color text-main-color
+}
+
+#formations .preuve-social ul li i{
+    @apply text-white translate-y-px
+}
+
+#questions .intro h2:after{
+    content: "";
+}
+
+#questions ul li.card{
+    @apply text-center
+}
+
+#questions ul li.card h4{
+    @apply text-white font-semibold text-[15px]
+}
+
+#questions ul li.card p{
+    @apply text-[12px]
 }

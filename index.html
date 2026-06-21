@@ -9,9 +9,9 @@
     <title>EMSA - Ecole Marocaine des sciences appliquées</title>
 </head>
 <body class="bg-main-bg text-text-color overflow-x-hidden!">
-    <header class="backdrop-blur-xl fixed z-100 top-0 left-1/2 -translate-x-1/2 w-full">
+    <header class="backdrop-blur-xl fixed z-100 top-0 left-1/2 -translate-x-1/2 w-full border-b-[.5px] border-main-color/20">
         <div class="container flex-between py-4 px-[auto]! ">
-            <a href="" class="logo relative flex items-center gap-x-3 text-[12px] text-white">
+            <a href="" class="logo relative flex-items gap-x-3 text-[12px] text-white">
                 <img src="Assets/emsa logo.png" alt="emsa" class="w-[100px] h-[60px] rounded-md border-2 border-main-color bg-white pr-2 pb-2">
                 <span>École Marocaine des Sciences<br>Appliquées<br>المدرسة المغربية للعلوم التطبيقية</span>
             </a>
@@ -26,12 +26,12 @@
     </header>
     <main>
         <div class="container flex-between pb-20">
-            <div class="hero max-w-[780px] pt-28 laptop:pt-32 max-phone:text-center">
-                <div class="text flex flex-wrap gap-3 mb-10 max-phone:flex-center">
+            <div class="hero max-w-[780px] pt-28 laptop:pt-32">
+                <div class="text flex flex-wrap gap-3 mb-7 phone:mb-10">
                     <span class="bg-[#211419] text-[#f7b16d]">Inscriptions ouvertes</span>
                     <span class="bg-[#2c1017] text-[#ff5e6d]">Places limitées</span>
                 </div>
-                <h1 class="text-[3.6rem] tablet:text-[4.6rem] font-black leading-[0.95] tracking-tighter text-white">
+                <h1 class="text-[3rem] tablet:text-[4.6rem] font-black leading-[0.95] tracking-tighter text-white">
                     Ton avenir commence <span class="text-main-color">ici.</span><br>
                     Forme-toi pour les métiers <span class="underline decoration-main-color decoration-4 underline-offset-8">qui recrutent</span>.
                 </h1>
@@ -39,7 +39,7 @@
                     Développement Informatique · Transport & Logistique<br>
                     2 ans · 100% pratique · Diplôme agréé · Stage garanti · Casablanca
                 </p>
-                <div class="buttons mt-12 flex max-phone:flex-center flex-wrap gap-4">
+                <div class="buttons mt-12 flex flex-wrap gap-4">
                     <a href="#inscription" class="bg-main-color btn-shadow">Réserver ma place</a>
                     <a href="#formations" class="border border-white/20 bg-white/5">Voir les formations</a>
                 </div>
@@ -66,13 +66,13 @@
     </main>
     <section id="accreditations" class="bg-sec-bg">
         <div class="container">
-            <div class="text-center mb-15">
-                <span class="badge bg-[#1b1b22] text-main-color py-1 px-3.5 rounded-[50px] text-[12px] uppercase tracking-[0.2em]">GARANTIE D'EXCELLENCE</span>
-                <h2 class="text-white text-3xl fold:text-4xl tablet:text-[42px] font-bold mt-7 mb-2 leading-13.5">
+            <div class="intro mb-15">
+                <span>GARANTIE D'EXCELLENCE</span>
+                <h2 class="leading-11.5 phone:leading-13.5">                   
                     Nos <span class="text-main-color">Accréditations</span><br>
                     & Partenariats
                 </h2>
-                <p class="text-text-color text-sm fold:text-[15px] leading-7 mt-6 max-w-[700px] mx-auto">
+                <p>
                     La formation à l'École Marocaine des Sciences Appliquées, reconnue par l'État, vise à<br>
                     renforcer l'organisation des entreprises et la qualité de leurs ressources humaines. Nous<br>
                     formons des cadres et managers capables d'occuper des postes de responsabilité.
@@ -121,17 +121,17 @@
     </section>
     <section id="formations">
         <div class="container">
-            <div class="intro text-center mb-16">
-                <span class="bg-[#1b1b22] text-main-color py-1.5 px-4 rounded-[50px] text-[12px] uppercase tracking-[0.2em] font-semibold">FORMATIONS</span>
-                <h2 class="text-white text-3xl fold:text-4xl tablet:text-[42px] font-black mt-7 mb-2 leading-tight tracking-tight">2 filières. 1 objectif : ton emploi.</h2>
-                <p class="text-text-color text-sm fold:text-[15px] leading-7 mt-6 max-w-[700px] mx-auto">Choisis la filière qui correspond à ta passion et aux besoins du marché marocain en 2025/2026.</p>
+            <div class="intro mb-16">
+                <span class="">FORMATIONS</span>
+                <h2 class="leading-tight tracking-tight">2 filières. 1 objectif : ton emploi.</h2>
+                <p>Choisis la filière qui correspond à ta passion et aux besoins du marché marocain en 2025/2026.</p>
             </div>
-            <div class="cards-list grid gap-8">
+            <div class="cards-list grid gap-8 mb-20">
                 <article class="card">
                     <div class="card-header">
                         <div class="card-info">
                             <div class="card-icon">
-                                <i class="fi fi-rr-display-code text-[28px] text-[#58d88f]"></i>
+                                <i class="fi fi-ss-display-code text-[28px] text-[#58d88f]"></i>
                             </div>
                             <div class="card-text">
                                 <h3>Développement Informatique</h3>
@@ -193,7 +193,7 @@
                     <div class="card-header">
                         <div class="card-info">
                             <div class="card-icon">
-                                <i class="fi fi-rr-truck-moving text-[28px] text-[#ffb36d]"></i>
+                                <i class="fi fi-ss-truck-moving text-[28px] text-[#ffb36d]"></i>
                             </div>
                             <div class="card-text">
                                 <h3>Transport & Logistique</h3>
@@ -251,6 +251,87 @@
                     </div>
                 </article>
             </div>
+            <div class="preuve-social">
+                <div class="intro mb-8">
+                    <h2 class="relative">Nos étudiants brillent ici</h2>
+                    <p>Entreprises où nos diplômés réalisent leurs stages et décrochent leur premier emploi.</p>
+                </div>
+                <ul class="flex-center gap-3 flex-wrap mb-5">
+                    <li class="card">
+                        <i class="fi fi-ss-apartment"></i>
+                        Enterprise Tech
+                    </li>
+                    <li class="card">
+                        <i class="fi fi-ss-industrial-pollution"></i>
+                        Groupe Logistique
+                    </li>
+                    <li class="card">
+                        <i class="fi fi-ss-computer"></i>
+                        IT Solutions
+                    </li>
+                    <li class="card">
+                        <i class="fi fi-ss-ship"></i>
+                        Transport & Transit
+                    </li>
+                    <li class="card">
+                        <i class="fi fi-sr-box-open"></i>
+                        Supply Chain
+                    </li>
+                    <li class="card">
+                        <i class="fi fi-bs-gears"></i>
+                        Systèmes Info
+                    </li>
+                    <li class="card">
+                        <i class="fi fi-ss-globe translate-y-[2px]!"></i>
+                        Digital Agency
+                    </li>
+                    <li class="card">
+                        <i class="fi fi-br-robotic-arm"></i>
+                        Industrie
+                    </li>
+                </ul>
+                <span class="flex-center text-sm">+ 150 entreprises partenaires au Maroc</span>
+            </div>
+        </div>
+    </section>
+    <section id="questions" class="bg-sec-bg">
+        <div class="container">
+            <div class="intro text-left! mb-10">
+                <span>questions</span>
+                <h2>Pourquoi choisir l'EMSA ?</h2>
+            </div>
+            <ul class="grid grid-cols-[repeat(auto-fit,minmax(190px,1fr))] gap-3">
+                <li class="card">
+                    <i></i>
+                    <h4>Formation 100% pratique</h4>
+                    <p>Projets réels, ateliers, simulations. Opérationnel dès le premier jour.</p>
+                </li>
+                <li class="card">
+                    <i></i>
+                    <h4>Diplôme reconnu</h4>
+                    <p>Agréé par l'État marocain, valorisé par tous les recruteurs.</p>
+                </li>
+                <li class="card">
+                    <i></i>
+                    <h4>Formateurs terrain</h4>
+                    <p>Professionnels actifs dans les secteurs IT et logistique.</p>
+                </li>
+                <li class="card">
+                    <i></i>
+                    <h4>Stage garanti</h4>
+                    <p>Accès direct au réseau de 200+ entreprises partenaires.</p>
+                </li>
+                <li class="card">
+                    <i></i>
+                    <h4>85% d'insertion pro</h4>
+                    <p>Nos diplômés trouvent un poste en moins de 6 mois.</p>
+                </li>
+                <li class="card">
+                    <i></i>
+                    <h4>Centre Casablanca</h4>
+                    <p>39 Bd Mohammed V — au cœur de l'activité économique.</p>
+                </li>
+            </ul>
         </div>
     </section>
     <script src="JS/script.js"></script>

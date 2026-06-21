@@ -58,6 +58,10 @@ header ul li:last-of-type:hover {
     @apply text-main-color bg-white
 }
 
+main{
+    background-image: radial-gradient(ellipse at 70% 55%, rgba(232, 119, 34, 0.15) 0%, transparent 50%);
+}
+
 main .hero .text span {
     @apply inline-flex rounded-full px-4 py-2 text-[12px] uppercase tracking-[0.2em];
 }
@@ -162,7 +166,7 @@ section {
 }
 
 #formations .card:hover {
-    @apply border-main-color/15 -translate-y-0.5;
+    @apply border-main-color -translate-y-0.5;
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
 }
 
@@ -278,11 +282,29 @@ section {
 }
 
 #questions ul li.card{
-    @apply text-center
+    @apply flex-center flex-col text-center py-6 px-10 rounded-xl border-text-color/20 duration-300 relative overflow-hidden;
+}
+
+#questions ul li.card:hover{
+    @apply border-main-color translate-y-[-5px];
+}
+
+#questions ul li.card::before {
+    content: "";
+    @apply absolute inset-0 opacity-0 transition-opacity duration-300;
+    background-image: radial-gradient(circle at 50% 0%, rgba(232, 119, 34, 0.08) 0%, transparent 50%);
+}
+
+#questions ul li.card:hover::before {
+    @apply opacity-100;
+}
+
+#questions ul li.card i{
+    @apply text-3xl text-main-color mb-3 
 }
 
 #questions ul li.card h4{
-    @apply text-white font-semibold text-[15px]
+    @apply text-white font-semibold text-[15px] mb-2
 }
 
 #questions ul li.card p{

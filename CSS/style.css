@@ -308,5 +308,44 @@ section {
 }
 
 #questions ul li.card p{
+    @apply text-[12px] font-medium
+}
+
+#témoignages ul li.card{
+    @apply p-7 pb-3 rounded-xl border-text-color/20! flex flex-col duration-200
+}
+
+#témoignages ul li.card:hover{
+    @apply border-main-color! translate-y-[-5px];
+}
+
+#témoignages ul li.card .stars{
+    @apply text-amber-500 text-[10px]
+}
+
+
+#témoignages ul li.card p{
+    @apply my-3 text-[13px] font-medium italic
+}
+
+
+#témoignages ul li.card .profil{
+    @apply flex-items gap-3
+}
+
+
+#témoignages ul li.card .profil .pic{
+    @apply  bg-main-color text-white font-bold text-sm rounded-full size-[35px] uppercase flex-center
+}
+
+#témoignages ul li.card .profil h4{
+    @apply text-white font-bold text-[14px]
+}
+
+#témoignages ul li.card .profil span{
     @apply text-[12px]
+}
+
+#témoignages ul li.card .info{
+    @apply flex flex-col
 }

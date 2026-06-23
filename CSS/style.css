@@ -400,7 +400,6 @@ section {
     @apply text-white text-[15px] font-medium leading-relaxed;
 }
 
-
 #inscription .form-group label {
     @apply block text-[13px] font-semibold text-text-color mb-2.5;
 }

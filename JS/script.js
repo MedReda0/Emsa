@@ -41,6 +41,5 @@ inscriptionForm.addEventListener('submit', (e) => {
 });
 
 num_input.addEventListener('input', (e) => {
-    // Instantly strips out anything that isn't a number or a "+" at the start
     e.target.value = e.target.value.replace(/(?!^\+)[^\d]/g, '');
 });

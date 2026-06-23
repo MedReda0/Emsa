@@ -400,9 +400,6 @@ section {
     @apply text-white text-[15px] font-medium leading-relaxed;
 }
 
-#inscription .form-container {
-    @apply p-6 tablet:p-10 rounded-2xl bg-card-color border border-white/5;
-}
 
 #inscription .form-group label {
     @apply block text-[13px] font-semibold text-text-color mb-2.5;

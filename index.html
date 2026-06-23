@@ -50,9 +50,9 @@
         <a href="#inscription" class="flex-center mt-auto text-white bg-main-color mx-4 py-3 font-bold text-lg rounded-lg">S'inscrire</a>
         <div class="contact flex flex-col gap-3 bg-main-color/20 text-white mt-4 px-4 py-5">
             <span>Besoin d'aide?</span>
-            <a href="tel:+1234567890">
+            <a href="tel:+212660523715">
                 <i class="fi fi-sr-phone-call"></i>
-                +1234567890
+                +212 660-523715
             </a>
             <a href="mailto:contact@emsa.ma">
                 <i class="fi fi-sr-envelope"></i>
@@ -500,52 +500,50 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-container">
-                    <form id="inscription-form">
-                        <div class="grid gap-5 phone:grid-cols-2 mb-5 duration-200">
-                            <div class="form-group">
-                                <label>Prénom & Nom</label>
-                                <input type="text" placeholder="Ton prénom et nom" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Téléphone</label>
-                                <input class="num_input" type="tel" minlength="10" maxlength="12" placeholder="Ton numéro" required>
-                            </div>
+                <form id="inscription-form" class="p-6 tablet:p-10 rounded-2xl bg-card-color border border-white/5">
+                    <div class="grid gap-5 phone:grid-cols-2 mb-5 duration-200">
+                        <div class="form-group">
+                            <label>Prénom & Nom</label>
+                            <input type="text" placeholder="Ton prénom et nom" required>
                         </div>
-                        <div class="form-group mb-5">
-                            <label>Ville</label>
-                            <input type="text" placeholder="Ta ville">
+                        <div class="form-group">
+                            <label>Téléphone</label>
+                            <input class="num_input" type="tel" minlength="10" maxlength="12" placeholder="Ton numéro" required>
                         </div>
-                        <div class="form-group mb-5">
-                            <label>Niveau d'études</label>
-                            <select>
-                                <option value="" disabled selected>-- Sélectionner --</option>
-                                <option value="Terminale / Bac en cours">Terminale / Bac en cours</option>
-                                <option value="Bac obtenu">Bac obtenu</option>
-                                <option value="bac+1 / bac+2">Bac+1 / bac+2</option>
-                                <option value="bac+3 ou plus">Bac+3 ou plus</option>
-                            </select>
-                        </div>
-                        <div class="form-group mb-8">
-                            <label>Formation souhaitée</label>
-                            <select>
-                                <option value="" disabled selected>-- Choisir ma filière --</option>
-                                <option value="TS Développement Informatique">TS Développement Informatique</option>
-                                <option value="TS Transport & Logistique">TS Transport & Logistique</option>
-                                <option value="Je veux être conseillé(e)">Je veux être conseillé(e)</option>
-                            </select>
-                        </div>
-                        <div class="msg success opacity-0 hidden">Message envoyé avec succès ! Merci.</div>
-                        <div class="msg failure opacity-0 hidden text-red-800! bg-red-800/20! border-red-800!">Une erreur est survenue. Veuillez réessayer plus tard.</div>
-                        <button type="submit" class="submit-btn w-full flex-center gap-2 mt-4 py-4 bg-main-color text-white font-bold rounded-xl btn-shadow transition-colors duration-300">Je veux m'inscrire</button>
-                        <span class="flex-center text-sm mt-5">Vos données sont confidentielles · Réponse garantie sous 2h · Zéro engagement</span>
-                    </form>
-                </div>
+                    </div>
+                    <div class="form-group mb-5">
+                        <label>Ville</label>
+                        <input type="text" placeholder="Ta ville">
+                    </div>
+                    <div class="form-group mb-5">
+                        <label>Niveau d'études</label>
+                        <select>
+                            <option value="" disabled selected>-- Sélectionner --</option>
+                            <option value="Terminale / Bac en cours">Terminale / Bac en cours</option>
+                            <option value="Bac obtenu">Bac obtenu</option>
+                            <option value="bac+1 / bac+2">Bac+1 / bac+2</option>
+                            <option value="bac+3 ou plus">Bac+3 ou plus</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-8">
+                        <label>Formation souhaitée</label>
+                        <select>
+                            <option value="" disabled selected>-- Choisir ma filière --</option>
+                            <option value="TS Développement Informatique">TS Développement Informatique</option>
+                            <option value="TS Transport & Logistique">TS Transport & Logistique</option>
+                            <option value="Je veux être conseillé(e)">Je veux être conseillé(e)</option>
+                        </select>
+                    </div>
+                    <div class="msg success opacity-0 hidden">Message envoyé avec succès ! Merci.</div>
+                    <div class="msg failure opacity-0 hidden text-red-800! bg-red-800/20! border-red-800!">Une erreur est survenue. Veuillez réessayer plus tard.</div>
+                    <button type="submit" class="submit-btn w-full flex-center gap-2 mt-4 py-4 bg-main-color text-white font-bold rounded-xl btn-shadow transition-colors duration-300">Je veux m'inscrire</button>
+                    <span class="flex-center text-sm mt-5">Vos données sont confidentielles · Réponse garantie sous 2h · Zéro engagement</span>
+                </form>
             </div>
         </div>
     </section>
     <footer>
-        <div class="container py-5 flex-between">
+        <div class="container py-5 flex-between gap-3 max-phone:flex-col">
             <a href="#main" class="logo relative flex-items gap-x-3 text-[12px] text-white">
                 <img src="Assets/emsa logo.png" alt="emsa"
                     class="w-[100px] h-[60px] rounded-md border-2 border-main-color bg-white pr-2 pb-2">

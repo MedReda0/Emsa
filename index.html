@@ -8,10 +8,10 @@
     <link rel="shortcut icon" href="Assets/emsa logo.ico" type="image/x-icon">
     <title>EMSA - Ecole Marocaine des sciences appliquées</title>
 </head>
-<body class="bg-main-bg text-text-color overflow-x-hidden!">
+<body class="bg-main-bg text-text-color overflow-x-hidden! relative">
     <header class="backdrop-blur-xl fixed z-100 top-0 left-1/2 -translate-x-1/2 w-full border-b-[.5px] border-main-color/20">
         <div class="container flex-between py-4 px-[auto]! ">
-            <a href="" class="logo relative flex-items gap-x-3 text-[12px] text-white">
+            <a href="#main" class="logo relative flex-items gap-x-3 text-[12px] text-white">
                 <img src="Assets/emsa logo.png" alt="emsa" class="w-[100px] h-[60px] rounded-md border-2 border-main-color bg-white pr-2 pb-2">
                 <span>École Marocaine des Sciences<br>Appliquées<br>المدرسة المغربية للعلوم التطبيقية</span>
             </a>
@@ -20,11 +20,48 @@
                 <li><a href="#formations">Formations</a></li>
                 <li><a href="#questions">Pourquoi EMSA</a></li>
                 <li><a href="#témoignages">Témoignages</a></li>
-                <li class="text-white bg-main-color py-2 px-5 rounded-md font-bold"><a href="#inscription">S'inscrire</a></li>
+                <a href="#inscription"><li class="text-white bg-main-color py-2 px-5 rounded-md font-bold">S'inscrire</li></a>
             </ul>
+            <i class="fi fi-sr-menu-burger menu tablet:hidden text-2xl translate-y-[3px] text-white duration-200"></i>
         </div>
     </header>
-    <main>
+    <div class="side fixed top-0 -left-full w-[80%] h-screen grid grid-rows-[auto_1fr_auto_auto] bg-main-bg z-99999 border-r border-main-color/20 duration-200">
+        <a href="#main" class="px-4 py-[21px] border-b border-main-color/20">
+            <img src="Assets/emsa logo.png" alt="emsa" class="w-[90px] bg-white pr-2 pb-2 rounded-md">
+        </a>
+        <div class="links">
+            <a href="#accreditations">
+                <i class="fi fi-sr-shield-trust"></i>
+                Accreditations
+            </a>
+            <a href="#formations">
+                <i class="fi fi-ss-graduation-cap"></i>
+                Formations
+            </a>
+            <a href="#questions">
+                <i class="fi fi-ss-user-question"></i>
+                Pourquoi EMSA
+            </a>
+            <a href="#témoignages">
+                <i class="fi fi-sr-comment-alt"></i>
+                Témoignages
+            </a>
+        </div>
+        <a href="#inscription" class="flex-center mt-auto text-white bg-main-color mx-4 py-3 font-bold text-lg rounded-lg">S'inscrire</a>
+        <div class="contact flex flex-col gap-3 bg-main-color/20 text-white mt-4 px-4 py-5">
+            <span>Besoin d'aide?</span>
+            <a href="tel:+1234567890">
+                <i class="fi fi-sr-phone-call"></i>
+                +1234567890
+            </a>
+            <a href="mailto:contact@emsa.ma">
+                <i class="fi fi-sr-envelope"></i>
+                contact@emsa.ma
+            </a>
+
+        </div>
+    </div>
+    <main id="main">
         <div class="container flex-between pb-20">
             <div class="hero max-w-[780px] pt-28 laptop:pt-32">
                 <div class="text flex flex-wrap gap-3 mb-7 phone:mb-10">
@@ -412,6 +449,111 @@
             </ul>
         </div>
     </section>
+    <section id="inscription" class="bg-sec-bg">
+        <div class="container">
+            <div class="intro mb-15">
+                <span>INSCRIPTION</span>
+                <h2>Réserve ta place</h2>
+                <p>Remplis ce formulaire et notre conseiller te contacte en moins de 2 heures. Zéro engagement, 100% de réponses.</p>
+            </div>
+            <div class="grid gap-8 tablet:grid-cols-[0.8fr_1.2fr]">
+                <div class="info space-y-4">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fi fi-rr-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>EMAIL</h4>
+                            <p>contact@emsa.ma</p>
+                        </div>
+                    </div>
+                    <div class="box items-start!">
+                        <div class="icon">
+                            <i class="fi fi-br-phone-call"></i>
+                        </div>
+                        <div>
+                            <h4 class="mb-2!">PHONE</h4>
+                            <div class="space-y-2.5">
+                                <p>+212 660-523715</p>
+                                <p>+212 664-564213</p>
+                                <p>+212 660-905081</p>
+                                <p>+212 660-900789</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fi fi-rr-marker"></i>
+                        </div>
+                        <div>
+                            <h4>address</h4>
+                            <p>39 Boulevard Mohamed V</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fi fi-brands-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4>WHATSAPP</h4>
+                            <p>+212 660-523715</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <form id="inscription-form">
+                        <div class="grid gap-5 phone:grid-cols-2 mb-5 duration-200">
+                            <div class="form-group">
+                                <label>Prénom & Nom</label>
+                                <input type="text" placeholder="Ton prénom et nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Téléphone</label>
+                                <input class="num_input" type="tel" minlength="10" maxlength="12" placeholder="Ton numéro" required>
+                            </div>
+                        </div>
+                        <div class="form-group mb-5">
+                            <label>Ville</label>
+                            <input type="text" placeholder="Ta ville">
+                        </div>
+                        <div class="form-group mb-5">
+                            <label>Niveau d'études</label>
+                            <select>
+                                <option value="" disabled selected>-- Sélectionner --</option>
+                                <option value="Terminale / Bac en cours">Terminale / Bac en cours</option>
+                                <option value="Bac obtenu">Bac obtenu</option>
+                                <option value="bac+1 / bac+2">Bac+1 / bac+2</option>
+                                <option value="bac+3 ou plus">Bac+3 ou plus</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-8">
+                            <label>Formation souhaitée</label>
+                            <select>
+                                <option value="" disabled selected>-- Choisir ma filière --</option>
+                                <option value="TS Développement Informatique">TS Développement Informatique</option>
+                                <option value="TS Transport & Logistique">TS Transport & Logistique</option>
+                                <option value="Je veux être conseillé(e)">Je veux être conseillé(e)</option>
+                            </select>
+                        </div>
+                        <div class="msg success opacity-0 hidden">Message envoyé avec succès ! Merci.</div>
+                        <div class="msg failure opacity-0 hidden text-red-800! bg-red-800/20! border-red-800!">Une erreur est survenue. Veuillez réessayer plus tard.</div>
+                        <button type="submit" class="submit-btn w-full flex-center gap-2 mt-4 py-4 bg-main-color text-white font-bold rounded-xl btn-shadow transition-colors duration-300">Je veux m'inscrire</button>
+                        <span class="flex-center text-sm mt-5">Vos données sont confidentielles · Réponse garantie sous 2h · Zéro engagement</span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container py-5 flex-between">
+            <a href="#main" class="logo relative flex-items gap-x-3 text-[12px] text-white">
+                <img src="Assets/emsa logo.png" alt="emsa"
+                    class="w-[100px] h-[60px] rounded-md border-2 border-main-color bg-white pr-2 pb-2">
+                <span>École Marocaine des Sciences<br>Appliquées<br>المدرسة المغربية للعلوم التطبيقية</span>
+            </a>
+            <p class="text-sm">© 2026 EMSA — École Marocaine des Sciences Appliquées · Casablanca</p>
+        </div>
+    </footer>
     <script src="JS/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

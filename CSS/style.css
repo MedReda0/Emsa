@@ -58,6 +58,30 @@ header ul li:last-of-type:hover {
     @apply text-main-color bg-white
 }
 
+header i.menu:hover{
+    @apply text-main-color
+}
+
+.side .links a{
+    @apply flex-items gap-x-4 w-full text-white font-bold p-4 uppercase duration-200
+}
+
+.side .links a:hover{
+    @apply bg-card-color
+}
+
+.side .links a i{
+    @apply translate-y-[2px] text-main-color text-2xl
+}
+
+.side .contact a{
+    @apply flex-items gap-3 font-semibold
+}
+
+.side .contact i{
+    @apply text-main-color translate-y-[3px] text-lg
+}
+
 main{
     background-image: radial-gradient(ellipse at 70% 55%, rgba(232, 119, 34, 0.15) 0%, transparent 50%);
 }
@@ -91,7 +115,9 @@ main .hero .data div p:last-child {
 }
 
 section {
-    @apply py-16
+    @apply py-16;
+    
+    scroll-margin-top: 5rem;
 }
 
 .intro {
@@ -348,4 +374,58 @@ section {
 
 #témoignages ul li.card .info{
     @apply flex flex-col
+}
+
+#inscription .box {
+    @apply flex items-center gap-5 p-6 rounded-2xl bg-card-color border border-white/5 transition-transform duration-300;
+}
+
+#inscription .box:hover {
+    @apply translate-y-[-3px] border-main-color/30;
+}
+
+#inscription .box .icon {
+    @apply flex-center size-12 rounded-full bg-main-color text-white text-xl shrink-0 font-bold;
+}
+
+#inscription .box .icon i{
+    @apply translate-y-[2px] translate-x-px
+}
+
+#inscription .box h4 {
+    @apply text-[11px] font-bold text-text-color uppercase tracking-[0.25rem] mb-1.5;
+}
+
+#inscription .box p {
+    @apply text-white text-[15px] font-medium leading-relaxed;
+}
+
+#inscription .form-container {
+    @apply p-6 tablet:p-10 rounded-2xl bg-card-color border border-white/5;
+}
+
+#inscription .form-group label {
+    @apply block text-[13px] font-semibold text-text-color mb-2.5;
+}
+
+#inscription .form-group input,
+#inscription .form-group select {
+    @apply w-full px-4 py-3.5 rounded-xl bg-text-color/10 border border-white/5 text-sm text-white transition-colors duration-200;
+}
+
+#inscription .form-group input:focus,
+#inscription .form-group select:focus {
+    @apply border-main-color bg-transparent outline-none;
+}
+
+#inscription .form-group select option {
+    @apply bg-card-color text-white;
+}
+
+#inscription .msg{
+    @apply py-3 px-5 rounded-lg text-emerald-700 bg-emerald-700/20 border border-emerald-700 duration-200
+}
+
+#inscription .submit-btn:hover {
+    @apply bg-white text-main-color;
 }

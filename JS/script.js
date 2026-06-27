@@ -1,7 +1,7 @@
 const nav = document.querySelector("header ul")
-const side_menu = document.querySelector(".side")
+const side_menu = document.querySelector("aside")
 const menu_btn = document.querySelector(".menu")
-const menu_links = document.querySelectorAll(".side a")
+const menu_links = document.querySelectorAll("aside a")
 const filter = document.querySelector(".filter")
 const inscriptionForm = document.getElementById('inscription-form');
 const success_msg = document.querySelector(".success")

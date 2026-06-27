@@ -62,23 +62,23 @@ header i.menu:hover{
     @apply text-main-color
 }
 
-.side .links a{
+aside .links a{
     @apply flex-items gap-x-4 w-full text-white font-bold p-4 uppercase duration-200
 }
 
-.side .links a:hover{
+aside .links a:hover{
     @apply bg-card-color
 }
 
-.side .links a i{
+aside .links a i{
     @apply translate-y-[2px] text-main-color text-2xl
 }
 
-.side .contact a{
+aside .contact a{
     @apply flex-items gap-3 font-semibold
 }
 
-.side .contact i{
+aside .contact i{
     @apply text-main-color translate-y-[3px] text-lg
 }
 
@@ -86,16 +86,8 @@ main{
     background-image: radial-gradient(ellipse at 70% 55%, rgba(232, 119, 34, 0.15) 0%, transparent 50%);
 }
 
-main .hero .text span {
-    @apply inline-flex rounded-full px-4 py-2 text-[12px] uppercase tracking-[0.2em];
-}
-
-main .hero .text span:first-child {
-    @apply bg-[#211419] text-[#f7b16d];
-}
-
-main .hero .text span:last-child {
-    @apply bg-[#2c1017] text-[#ff5e6d];
+main .hero .badges span {
+    @apply inline-flex rounded-full px-4.5 py-1.5 text-[11px] font-semibold uppercase tracking-[0.2em];
 }
 
 main .hero .buttons a {
@@ -236,6 +228,34 @@ section {
     @apply bg-[#2f160c] text-[#ffb36d] border-[#ffb36d]/10;
 }
 
+#formations .card .badge-neutral {
+    @apply bg-white/5 text-text-color border-white/10;
+}
+
+#formations .category-header {
+    @apply flex-between items-end mb-8;
+}
+
+#formations .category-header .title-wrap {
+    @apply border-l-[3px] pl-4;
+}
+
+#formations .category-header h3 {
+    @apply text-white text-2xl font-bold mb-1;
+}
+
+#formations .category-header p {
+    @apply text-text-color text-[13px] max-phone:text-[12px];
+}
+
+#formations .category-header > a {
+    @apply text-[13px] font-semibold transition-colors duration-200 flex-items gap-2
+}
+
+#formations .category-header > a:hover{
+    @apply text-white
+}
+
 #formations .card .card-text p {
     @apply mt-5 text-[#9fa1c8] text-sm leading-7 max-w-[680px];
 }
@@ -283,6 +303,58 @@ section {
 
 #formations .card .card-skills .skills-list span:hover {
     @apply text-white border-white/10 bg-[#1a1a29];
+}
+
+#formations .mini-card {
+    @apply flex flex-col h-full rounded-[32px] p-6 phone:p-10;
+}
+
+#formations .mini-card .card-badges {
+    @apply mb-5;
+}
+
+#formations .mini-card h3 {
+    @apply text-white text-[20px] font-bold mb-4 leading-tight;
+}
+
+#formations .mini-card > div > p {
+    @apply text-[#9fa1c8] text-[13px] leading-6 mb-8;
+}
+
+#formations .mini-card .details-grid {
+    @apply grid grid-cols-2 gap-4 border-t border-white/10 pt-6;
+}
+
+#formations .mini-card .details-grid h4 {
+    @apply text-white text-[11px] font-bold uppercase tracking-wider mb-4;
+}
+
+#formations .mini-card .details-grid ul {
+    @apply space-y-2 text-[13px] text-text-color;
+}
+
+#formations .mini-card .details-grid li {
+    @apply flex gap-2;
+}
+
+#formations .mini-card .details-grid li span {
+    @apply text-main-color
+}
+
+#formations .mini-card .details-grid .skills {
+    @apply flex flex-wrap gap-2;
+}
+
+#formations .mini-card .details-grid .skills span {
+    @apply px-2.5 py-1 bg-sec-bg rounded-md border border-white/5 text-[11px] text-text-color;
+}
+
+#formations .mini-card .prog-btn {
+    @apply mt-8 w-full block text-center py-3.5 rounded-xl border border-white/10 text-white text-[13px] font-semibold transition-all duration-300;
+}
+
+#formations .mini-card .prog-btn:hover {
+    @apply border-main-color text-main-color bg-main-color/5;
 }
 
 #formations .preuve-social .intro h2:after{
@@ -416,6 +488,10 @@ section {
 
 #inscription .form-group select option {
     @apply bg-card-color text-white;
+}
+
+#inscription .form-group select optgroup{
+    @apply bg-main-color text-white
 }
 
 #inscription .msg{

@@ -20,12 +20,14 @@
                 <li><a href="#formations">Formations</a></li>
                 <li><a href="#questions">Pourquoi EMSA</a></li>
                 <li><a href="#témoignages">Témoignages</a></li>
-                <a href="#inscription"><li class="text-white bg-main-color py-2 px-5 rounded-md font-bold">S'inscrire</li></a>
+                <li><a href="licence.html">Licence Professionnelle</a></li>
+                <li><a href="master.html">Mastère Professionnelle</a></li>
+                <li class="text-white bg-main-color py-2 px-5 rounded-md font-bold"><a href="#inscription">S'inscrire</a></li>
             </ul>
             <i class="fi fi-sr-menu-burger menu tablet:hidden text-2xl translate-y-[3px] text-white duration-200"></i>
         </div>
     </header>
-    <div class="side fixed top-0 -left-full w-[80%] h-screen grid grid-rows-[auto_1fr_auto_auto] bg-main-bg z-99999 border-r border-main-color/20 duration-200">
+    <aside class="fixed top-0 -left-full w-[80%] h-screen grid grid-rows-[auto_1fr_auto_auto] bg-main-bg z-99999 border-r border-main-color/20 duration-200">
         <a href="#main" class="px-4 py-[21px] border-b border-main-color/20">
             <img src="Assets/emsa logo.png" alt="emsa" class="w-[90px] bg-white pr-2 pb-2 rounded-md">
         </a>
@@ -46,6 +48,14 @@
                 <i class="fi fi-sr-comment-alt"></i>
                 Témoignages
             </a>
+            <a href="licence.html">
+                <i class="fi fi-sr-features-alt"></i>
+                Licence Professional
+            </a>
+            <a href="master.html">
+                <i class="fi fi-sr-features-alt"></i>
+                Mastère Professional
+            </a>
         </div>
         <a href="#inscription" class="flex-center mt-auto text-white bg-main-color mx-4 py-3 font-bold text-lg rounded-lg">S'inscrire</a>
         <div class="contact flex flex-col gap-3 bg-main-color/20 text-white mt-4 px-4 py-5">
@@ -60,45 +70,47 @@
             </a>
 
         </div>
-    </div>
+    </aside>
     <main id="main">
         <div class="container flex-between pb-20">
             <div class="hero max-w-[780px] pt-28 laptop:pt-32">
-                <div class="text flex flex-wrap gap-3 mb-7 phone:mb-10">
+                <div class="badges flex flex-wrap gap-3 mb-7 phone:mb-10">
                     <span class="bg-[#211419] text-[#f7b16d]">Inscriptions ouvertes</span>
                     <span class="bg-[#2c1017] text-[#ff5e6d]">Places limitées</span>
+                    <span class="bg-[#A78BFA]/20 text-[#A78BFA]">Enseignement Supérieur</span>
                 </div>
                 <h1 class="text-[3rem] tablet:text-[4.6rem] font-black leading-[0.95] tracking-tighter text-white">
                     Ton avenir commence <span class="text-main-color">ici.</span><br>
                     Forme-toi pour les métiers <span class="underline decoration-main-color decoration-4 underline-offset-8">qui recrutent</span>.
                 </h1>
-                <p class="mt-6 text-sm text-[#9fa1c8] leading-7 max-w-[720px]">
-                    Développement Informatique · Transport & Logistique<br>
-                    2 ans · 100% pratique · Diplôme agréé · Stage garanti · Casablanca
+                <p class="mt-8 text-[16px] text-[#9fa1c8] leading-7 max-w-[720px]">
+                    28 formations supérieures en Informatique, Management, Finance, Logistique, RH, Marketing, Cybersécurité et plus.
+                    Reconnues par l'État marocain et accrédités Union Européenne.
                 </p>
-                <div class="buttons mt-12 flex flex-wrap gap-4">
+                <div class="buttons mt-10 flex flex-wrap gap-4">
                     <a href="#inscription" class="bg-main-color btn-shadow">Réserver ma place</a>
                     <a href="#formations" class="border border-white/20 bg-white/5">Voir les formations</a>
                 </div>
                 <div class="data mt-16 grid gap-5 phone:grid-cols-4 text-center">
                     <div>
-                        <p>0%</p>
+                        <p>85%</p>
                         <p>Taux d'insertion pro</p>
                     </div>
                     <div>
-                        <p>0+</p>
+                        <p>150+</p>
                         <p>Entreprises partenaires</p>
                     </div>
                     <div>
-                        <p>0</p>
-                        <p>Ans de formation</p>
+                        <p>1000+</p>
+                        <p>Étudiants formés</p>
                     </div>
                     <div>
-                        <p>0+</p>
+                        <p>14</p>
                         <p>Ans d'expérience</p>
                     </div>
+                </div>
             </div>
-        </div>
+            <img src="Assets/person.png" alt="" class="w-1/2 max-tablet:hidden translate-y-20 translate-x-30">
         </div>
     </main>
     <section id="accreditations" class="bg-sec-bg">
@@ -160,11 +172,18 @@
         <div class="container">
             <div class="intro mb-16">
                 <span class="">FORMATIONS</span>
-                <h2 class="leading-tight tracking-tight">2 filières. 1 objectif : ton emploi.</h2>
-                <p>Choisis la filière qui correspond à ta passion et aux besoins du marché marocain en 2025/2026.</p>
+                <h2 class="leading-tight tracking-tight">Nos Formations d'Excellence</h2>
+                <p>Choisis la filière qui correspond à ta passion et aux besoins du marché marocain.</p>
             </div>
-            <div class="cards-list grid gap-8 mb-20">
-                <article class="card">
+            <div class="technicien-spécialisé mb-20">
+                <div class="category-header">
+                    <div class="title-wrap border-[#0ea5e9]">
+                        <h3>Technicien Spécialisé</h3>
+                        <p>Acquérez des compétences techniques pointues pour une insertion rapide.</p>
+                    </div>
+                </div>
+                <div class="cards-list grid gap-8">
+                    <article class="card">
                     <div class="card-header">
                         <div class="card-info">
                             <div class="card-icon">
@@ -287,7 +306,189 @@
                         </div>
                     </div>
                 </article>
+                </div>
             </div>
+            <div class="licence mb-20">
+                <div class="category-header">
+                    <div class="title-wrap border-[#58d88f]">
+                        <h3>Licence</h3>
+                        <p>Construisez vos bases fondamentales en ingénierie et gestion.</p>
+                    </div>
+                    <a href="licence.html" class="text-[#58d88f]">Voir plus &rarr;</a>
+                </div>
+                <div class="grid gap-6 tablet:grid-cols-2">
+                    <article class="card mini-card">
+                        <div>
+                            <div class="card-badges">
+                                <span class="card-badge badge-time">1 an</span>
+                                <span class="card-badge badge-state">Diplôme Reconnu / Accrédité</span>
+                                <span class="card-badge badge-highlight">Très Demandé</span>
+                            </div>
+                            <h3>Licence Administration De Base De Donnée & Technologies WEB</h3>
+                            <p>Advanced database administration combined with modern web framework mastery for the digital economy.</p>
+                            <div class="details-grid">
+                                <div>
+                                    <h4>DÉBOUCHÉS</h4>
+                                    <ul>
+                                        <li><span>•</span> Analyste programmeur</li>
+                                        <li><span>•</span> Administrateur de base de données</li>
+                                        <li><span>•</span> Développeur d'applications d'entreprise</li>
+                                        <li><span>•</span> Responsable de parc informatique</li>
+                                        <li><span>•</span> Webmaster d'architecture distribuée</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>COMPÉTENCES</h4>
+                                    <div class="skills">
+                                        <span>Java Object</span>
+                                        <span>Network Infrastructure</span>
+                                        <span>UML</span>
+                                        <span>Relational Databases</span>
+                                        <span>Web Technologies</span>
+                                        <span>Web Services & XML</span>
+                                        <span>Database Administration</span>
+                                        <span>J2EE Systems</span>
+                                        <span>Business English</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="licence.html" class="prog-btn">Détails du programme</a>
+                    </article>
+                    <article class="card mini-card">
+                        <div>
+                            <div class="card-badges">
+                                <span class="card-badge badge-time">1 an</span>
+                                <span class="card-badge badge-state">Diplôme Reconnu / Accrédité</span>
+                                <span class="card-badge badge-highlight">Gestion Fondamentale</span>
+                            </div>
+                            <h3>Licence Audit et Contrôle de Gestion</h3>
+                            <p>Financial evaluation and strategic monitoring to drive organizational performance and fiscal transparency.</p>
+                            <div class="details-grid">
+                                <div>
+                                    <h4>DÉBOUCHÉS</h4>
+                                    <ul>
+                                        <li><span>•</span> Contrôleur de gestion</li>
+                                        <li><span>•</span> Auditeur interne junior</li>
+                                        <li><span>•</span> Assistant du directeur financier</li>
+                                        <li><span>•</span> Commissaire aux comptes adjoint</li>
+                                        <li><span>•</span> Collaborateur de cabinet d'audit</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>COMPÉTENCES</h4>
+                                    <div class="skills">
+                                        <span>Techniques Comptables</span>
+                                        <span>Audit Légal</span>
+                                        <span>Contrôle de Gestion</span>
+                                        <span>Environnement Juridique</span>
+                                        <span>Audit Financier</span>
+                                        <span>Analyse Financière</span>
+                                        <span>Gestion Fiscale</span>
+                                        <span>Statistiques</span>
+                                        <span>Mathématiques Financières</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="licence.html" class="prog-btn">Détails du programme</a>
+                    </article>
+                </div>
+            </div>
+
+            <div class="master mb-20">
+                <div class="category-header">
+                    <div class="title-wrap border-main-color">
+                        <h3>Mastère</h3>
+                        <p>Expertise approfondie pour leaders et ingénieurs de demain.</p>
+                    </div>
+                    <a href="master.html" class="text-main-color">Voir plus &rarr;</a>
+                </div>
+                <div class="grid gap-6 tablet:grid-cols-2">
+                    <article class="card mini-card">
+                        <div>
+                            <div class="card-badges">
+                                <span class="card-badge badge-time">2 anss</span>
+                                <span class="card-badge badge-state">Diplôme Privé / Accrédité</span>
+                                <span class="card-badge badge-highlight">Carrière Executive</span>
+                            </div>
+                            <h3>Mastère Gestion des Ressources Humaines</h3>
+                            <p>Advanced strategic workforce planning and legal compliance expertise for large-scale enterprise management.</p>
+                            <div class="details-grid">
+                                <div>
+                                    <h4>DÉBOUCHÉS</h4>
+                                    <ul>
+                                        <li><span>•</span> Directeur des RH (DRH)</li>
+                                        <li><span>•</span> Consultant RH</li>
+                                        <li><span>•</span> Consultant en conduite du changement</li>
+                                        <li><span>•</span> Responsable du développement des talents</li>
+                                        <li><span>•</span> Auditeur social et gestionnaire des risques RH</li>
+                                        <li><span>•</span> Manager de transition organisationnelle</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>COMPÉTENCES</h4>
+                                    <div class="skills">
+                                        <span>Stratégie RH</span>
+                                        <span>Droit du Travail</span>
+                                        <span>Droit du Travail Approfondi</span>
+                                        <span>Ingénierie de la Formation</span>
+                                        <span>Relations Sociales</span>
+                                        <span>Gestion Provisionnelle des Emplois</span>
+                                        <span>Gains & Rémunérations</span>
+                                        <span>Audit Social</span>
+                                        <span>Soft Skills</span>
+                                        <span>Mémoire de Fin d'Études</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="master.html" class="prog-btn">Détails du programme</a>
+                    </article>
+                    <article class="card mini-card">
+                        <div>
+                            <div class="card-badges">
+                                <span class="card-badge badge-time">2 anss</span>
+                                <span class="card-badge badge-state">Diplôme Privé / Accrédité</span>
+                                <span class="card-badge badge-highlight">Très Demandé</span>
+                            </div>
+                            <h3>Mastère Ingénierie de Conception et de Développement d'Applications</h3>
+                            <p>Advanced multi-tier enterprise systems architecture and industrial software engineering methodologies.</p>
+                            <div class="details-grid">
+                                <div>
+                                    <h4>DÉBOUCHÉS</h4>
+                                    <ul>
+                                        <li><span>•</span> Ingénieur de développement</li>
+                                        <li><span>•</span> Architecte logiciel</li>
+                                        <li><span>•</span> Ingénieur d'études et de développement</li>
+                                        <li><span>•</span> Architecte de systèmes d'information</li>
+                                        <li><span>•</span> Chef de projet applicatif senior / Scrum Master</li>
+                                        <li><span>•</span> Consultant technique en technologies distribuées</li>
+                                        <li><span>•</span> Directeur technique adjoint (CTO)</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>COMPÉTENCES</h4>
+                                    <div class="skills">
+                                        <span>Conception UML Avancée</span>
+                                        <span>Architecture J2EE</span>
+                                        <span>Architecture Web J2EE</span>
+                                        <span>Frameworks .NET</span>
+                                        <span>Oracle Database DBA</span>
+                                        <span>SQL Server Enterprise</span>
+                                        <span>Cloud Services</span>
+                                        <span>Génie Logiciel</span>
+                                        <span>Gestion de Projets Agiles</span>
+                                        <span>Mémoire Technique</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="master.html" class="prog-btn">Détails du programme</a>
+                    </article>
+                </div>
+            </div>
+
             <div class="preuve-social">
                 <div class="intro mb-8">
                     <h2 class="relative">Nos étudiants brillent ici</h2>
@@ -458,7 +659,7 @@
             </div>
             <div class="grid gap-8 tablet:grid-cols-[0.8fr_1.2fr]">
                 <div class="info space-y-4">
-                    <div class="box">
+                    <a href="mailto:contact@emsa.ma" class="box">
                         <div class="icon">
                             <i class="fi fi-rr-envelope"></i>
                         </div>
@@ -466,21 +667,16 @@
                             <h4>EMAIL</h4>
                             <p>contact@emsa.ma</p>
                         </div>
-                    </div>
-                    <div class="box items-start!">
+                    </a>
+                    <a href="tel:+212660523715" class="box">
                         <div class="icon">
                             <i class="fi fi-br-phone-call"></i>
                         </div>
                         <div>
                             <h4 class="mb-2!">PHONE</h4>
-                            <div class="space-y-2.5">
-                                <p>+212 660-523715</p>
-                                <p>+212 664-564213</p>
-                                <p>+212 660-905081</p>
-                                <p>+212 660-900789</p>
-                            </div>
+                            <p>+212 660-523715</p>
                         </div>
-                    </div>
+                    </a>
                     <div class="box">
                         <div class="icon">
                             <i class="fi fi-rr-marker"></i>
@@ -490,7 +686,7 @@
                             <p>39 Boulevard Mohamed V</p>
                         </div>
                     </div>
-                    <div class="box">
+                    <a href="https://wa.me/212660523715" target="_blank" class="box">
                         <div class="icon">
                             <i class="fi fi-brands-whatsapp"></i>
                         </div>
@@ -498,7 +694,7 @@
                             <h4>WHATSAPP</h4>
                             <p>+212 660-523715</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <form id="inscription-form" class="p-6 tablet:p-10 rounded-2xl bg-card-color border border-white/5">
                     <div class="grid gap-5 phone:grid-cols-2 mb-5 duration-200">
@@ -529,8 +725,42 @@
                         <label>Formation souhaitée</label>
                         <select>
                             <option value="" disabled selected>-- Choisir ma filière --</option>
-                            <option value="TS Développement Informatique">TS Développement Informatique</option>
-                            <option value="TS Transport & Logistique">TS Transport & Logistique</option>
+                            <optgroup label="Technicien Spécialisé">
+                                <option value="TS Développement Informatique">TS Développement Informatique</option>
+                                <option value="TS Transport & Logistique">TS Transport & Logistique</option>
+                            </optgroup>
+                            <optgroup label="Licence (1 an)">
+                                <option value="Licence Administration De Base De Donnée & Technologies WEB">Licence Administration De Base De Donnée & Technologies WEB</option>
+                                <option value="Licence Audit et Contrôle de Gestion">Licence Audit et Contrôle de Gestion</option>
+                                <option value="Licence Cyber Security et Ingénierie IP">Licence Cyber Security et Ingénierie IP</option>
+                                <option value="Licence Développement d'Applications Nomades">Licence Développement d'Applications Nomades</option>
+                                <option value="Licence Développement JAVA/J2EE">Licence Développement JAVA/J2EE</option>
+                                <option value="Licence Développeur Concepteur Web/Mobile Full Stack">Licence Développeur Concepteur Web/Mobile Full Stack</option>
+                                <option value="Licence e-Business et Commerce International">Licence e-Business et Commerce International</option>
+                                <option value="Licence Gestion des Structures Sanitaires et Sociales">Licence Gestion des Structures Sanitaires et Sociales</option>
+                                <option value="Licence Informatique, Réseaux et Sécurité">Licence Informatique, Réseaux et Sécurité</option>
+                                <option value="Licence Ingénierie des Systèmes, Réseaux et Cloud Computing">Licence Ingénierie des Systèmes, Réseaux et Cloud Computing</option>
+                                <option value="Licence Management et Gestion des PME">Licence Management et Gestion des PME</option>
+                                <option value="Licence Marketing Digital">Licence Marketing Digital</option>
+                                <option value="Licence Marketing Digital & e-Commerce">Licence Marketing Digital & e-Commerce</option>
+                                <option value="Licence Multimédia et Technologies du Web">Licence Multimédia et Technologies du Web</option>
+                                <option value="Licence Professionnelle en QHSE">Licence Professionnelle en QHSE</option>
+                                <option value="Licence Sciences et Techniques en Génie Civil">Licence Sciences et Techniques en Génie Civil</option>
+                                <option value="Licence Techniques du e-Commerce & Commerce International">Licence Techniques du e-Commerce & Commerce International</option>
+                                <option value="Licence Transport et Logistique">Licence Transport et Logistique</option>
+                                <option value="Licence Gestion des Entreprises">Licence Gestion des Entreprises</option>
+                                <option value="Licence Gestionnaire des Ressources Humaines">Licence Gestionnaire des Ressources Humaines</option>
+                                <option value="Licence Finance">Licence Finance</option>
+                            </optgroup>
+                            <optgroup label="Mastère (2 ans)">
+                                <option value="Mastère Gestion des Ressources Humaines">Mastère Gestion des Ressources Humaines</option>
+                                <option value="Mastère Ingénierie de Conception et de Développement d'Applications">Mastère Ingénierie de Conception et de Développement d'Applications</option>
+                                <option value="Mastère Ingénierie Systèmes, Réseaux et Sécurité">Mastère Ingénierie Systèmes, Réseaux et Sécurité</option>
+                                <option value="Mastère Management et Stratégie d'Entreprise">Mastère Management et Stratégie d'Entreprise</option>
+                                <option value="Mastère Management et Stratégies Financières">Mastère Management et Stratégies Financières</option>
+                                <option value="Mastère Marketing et Développement Commercial">Mastère Marketing et Développement Commercial</option>
+                                <option value="Mastère Transport et Logistique">Mastère Transport et Logistique</option>
+                            </optgroup>
                             <option value="Je veux être conseillé(e)">Je veux être conseillé(e)</option>
                         </select>
                     </div>
